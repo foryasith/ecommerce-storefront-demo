@@ -155,7 +155,7 @@ export default function AddressForm({ initial = EMPTY_FORM, onSubmit, onCancel, 
         <button
           type="submit"
           disabled={loading}
-          className="flex-1 bg-indigo-600 text-white py-2.5 rounded-lg text-sm font-medium hover:bg-indigo-700 transition disabled:opacity-50"
+          style={{ backgroundColor: "#610C27", color: "#EFECE9" }} className="flex-1 py-2.5 rounded-lg text-sm font-medium hover:opacity-90 transition disabled:opacity-50"
         >
           {loading ? "Saving..." : "Save address"}
         </button>
