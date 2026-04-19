@@ -141,7 +141,7 @@ export default function CartPage() {
                   key={item.itemId}
                   className="bg-white rounded-2xl border border-gray-100 p-5 flex gap-4 items-start"
                 >
-                  <div className="bg-indigo-50 rounded-xl w-20 h-20 flex items-center justify-center flex-shrink-0">
+                  <div style={{ backgroundColor: "#EFECE9" }} className="rounded-xl w-20 h-20 flex items-center justify-center flex-shrink-0">
                     <span className="text-3xl">🛍️</span>
                   </div>
 
@@ -155,7 +155,7 @@ export default function CartPage() {
                           {item.product.categoryName} · SKU: {item.product.sku}
                         </p>
                       </div>
-                      <span className="font-bold text-indigo-600 text-sm whitespace-nowrap">
+                      <span style={{ color: "#610C27" }} className="font-bold text-sm whitespace-nowrap">
                         ${item.lineTotal.toFixed(2)}
                       </span>
                     </div>
@@ -222,7 +222,7 @@ export default function CartPage() {
                 </Link>
                 <button
                   onClick={() => navigate("/checkout")}
-                  className="flex-1 bg-indigo-600 text-white py-2.5 rounded-lg text-sm font-medium hover:bg-indigo-700 transition"
+                  style={{ backgroundColor: "#610C27", color: "#EFECE9" }} className="flex-1 py-2.5 rounded-lg text-sm font-medium hover:opacity-90 transition"
                 >
                   Proceed to checkout
                 </button>
