@@ -1,16 +1,32 @@
-# React + Vite
+# ShopEase — Ecommerce Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern ecommerce storefront built with **React + Vite + Tailwind CSS**.
 
-Currently, two official plugins are available:
+## Tech Stack
+- React 18
+- Vite
+- Tailwind CSS
+- React Router DOM
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Pages
+- `/` — Home page
+- `/login` — Customer login
+- `/signup` — Customer registration
+- `/products` — Product catalog with search and pagination
+- `/cart` — Shopping cart
+- `/addresses` — Shipping address management
+- `/checkout` — Order checkout
+- `/orders` — Order history
+- `/orders/:id` — Order detail
+- `/account` — User profile
+- `/wishlist` — Saved items
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Environment Variables
+Create a `.env.local` file:
