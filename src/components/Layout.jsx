@@ -1,12 +1,14 @@
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export default function Layout({ children }) {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen flex flex-col" style={{ backgroundColor: "#EFECE9" }}>
       <Navbar />
-      <main className="max-w-6xl mx-auto px-4 py-8">
+      <main className="flex-1 max-w-6xl mx-auto w-full px-4 py-8">
         {children}
       </main>
+      <Footer />
     </div>
   );
 }
