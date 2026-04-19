@@ -46,11 +46,11 @@ export default function ProductsPage() {
             value={searchInput}
             onChange={(e) => setSearchInput(e.target.value)}
             placeholder="Search products..."
-            className="border border-gray-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 w-56"
+            style={{ borderColor: "#DDD9CE" }} className="border rounded-lg px-4 py-2 text-sm focus:outline-none w-56"
           />
           <button
             type="submit"
-            className="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-indigo-700 transition"
+            style={{ backgroundColor: "#610C27", color: "#EFECE9" }} className="px-4 py-2 rounded-lg text-sm hover:opacity-90 transition"
           >
             Search
           </button>
@@ -58,7 +58,7 @@ export default function ProductsPage() {
             <button
               type="button"
               onClick={() => { setSearch(""); setSearchInput(""); setPage(1); }}
-              className="border border-gray-200 px-4 py-2 rounded-lg text-sm hover:bg-gray-50 transition"
+              style={{ borderColor: "#DDD9CE", color: "#AC9C8D" }} className="border px-4 py-2 rounded-lg text-sm hover:opacity-70 transition"
             >
               Clear
             </button>
